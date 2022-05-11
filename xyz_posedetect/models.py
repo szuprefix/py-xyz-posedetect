@@ -14,6 +14,8 @@ class Video(models.Model):
     play_url = models.URLField('播放地址', max_length=256, blank=True, default='')
     cover = models.URLField('封面', max_length=256, blank=True, default='')
     interval = models.PositiveSmallIntegerField('时长(秒)', blank=True, default=0)
+    width = models.PositiveSmallIntegerField('宽度', blank=True, default=0)
+    height = models.PositiveSmallIntegerField('高度', blank=True, default=0)
     poses = modelutils.JSONField("姿势数据", blank=True, null=True)
     create_time = models.DateTimeField("创建时间", auto_now_add=True)
     is_active = models.BooleanField("有效", blank=False, default=True)

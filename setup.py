@@ -8,7 +8,7 @@ setup(
     version="0.0.1",
     author="szuprefix",
     author_email="szuprefix@126.com",
-    description="twitter utils",
+    description="posedetect utils",
     long_description=open("README.rst").read(),
     license="MIT",
     url="https://github.com/szuprefix/py-xyz-posedetect",
