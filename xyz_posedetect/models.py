@@ -7,7 +7,7 @@ class Video(models.Model):
         verbose_name_plural = verbose_name = "视频"
         ordering = ('-create_time',)
 
-    source_url = models.URLField('源地址', max_length=256, unique=True)
+    source_url = models.URLField('源地址', max_length=255, unique=True)
     name = models.CharField("名称", max_length=256, blank=True, default='')
     play_url = models.URLField('播放地址', max_length=256, blank=True, default='')
     cover = models.URLField('封面', max_length=256, blank=True, default='')
